@@ -6,12 +6,6 @@
       "use": "@vercel/node"
     }
   ],
-  "functions": {
-    "api/platform-timeout.js": {
-      "memory": 1024,
-      "timeout": 30
-    }
-  },
   "routes": [
     {
       "src": "/api/timeout",
@@ -39,7 +33,8 @@
     },
     {
       "src": "/api/platform-timeout",
-      "dest": "/api/platform-timeout.js"
+      "dest": "/api/platform-timeout.js",
+      "maxDuration": 30
     }
   ]
 }
