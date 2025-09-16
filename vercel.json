@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/timeout",
+      "dest": "/api/timeout.js"
+    },
+    {
+      "src": "/api/redirect",
+      "dest": "/api/redirect.js"
+    },
+    {
+      "src": "/api/rewrite",
+      "dest": "/api/rewrite.js"
+    },
+    {
+      "src": "/api/headers",
+      "dest": "/api/headers.js"
+    }
+  ]
+}
