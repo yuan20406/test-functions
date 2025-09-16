@@ -1,15 +1,16 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/*": {
+      "maxDuration": 30
+    }
+  },
   "builds": [
     {
       "src": "api/*.js",
       "use": "@vercel/node"
     }
   ],
-  "functions":{
-    "api/platform-timeout.js":{
-      "maxDuration":30
-    }
-  },
   "routes": [
     {
       "src": "/api/timeout",
