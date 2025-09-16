@@ -22,6 +22,18 @@
     {
       "src": "/api/headers",
       "dest": "/api/headers.js"
+    },
+    {
+      "src": "/api/err1",
+      "dest": "/api/err1.js"
+    },
+    {
+      "src": "/api/err2",
+      "dest": "/api/err2.js"
+    },
+    {
+      "src": "/api/platform-timeout",
+      "dest": "/api/platform-timeout.js"
     }
   ]
 }

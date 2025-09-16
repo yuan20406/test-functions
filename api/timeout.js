@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   }, 5000);
 
   try {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve) => setTimeout(resolve, 6000));
     clearTimeout(timeout); // 清除超时
     res.status(200).send('Task Completed');
   } catch (error) {
