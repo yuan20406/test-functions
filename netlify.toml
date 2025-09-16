@@ -1,6 +1,6 @@
 [build]
   functions = "functions"
-  
+
 [[redirects]]
   from = "/api/timeout"
   to = "/.netlify/functions/timeout"
@@ -19,4 +19,19 @@
 [[redirects]]
   from = "/api/headers"
   to = "/.netlify/functions/headers"
+  status = 200
+
+[[redirects]]
+  from = "/api/err1"
+  to = "/.netlify/functions/err1"
+  status = 200
+
+[[redirects]]
+  from = "/api/err2"
+  to = "/.netlify/functions/err2"
+  status = 200
+
+[[redirects]]
+  from = "/api/platform-timeout"
+  to = "/.netlify/functions/platform-timeout"
   status = 200
