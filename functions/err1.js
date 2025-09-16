@@ -1,5 +1,5 @@
 
-const timeout = require('connect-timeout');
+
 timeout('5s')
 exports.handler = async function(event, context) {
   return {
