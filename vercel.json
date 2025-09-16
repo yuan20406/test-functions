@@ -6,6 +6,11 @@
       "use": "@vercel/node"
     }
   ],
+  "functions": {
+    "api/platform-timeout.js": {
+      "maxDuration": 30 // This function can run for a maximum of 30 seconds
+    }
+  },
   "routes": [
     {
       "src": "/api/timeout",
@@ -33,8 +38,7 @@
     },
     {
       "src": "/api/platform-timeout",
-      "dest": "/api/platform-timeout.js",
-      "maxDuration": 30
+      "dest": "/api/platform-timeout.js"
     }
   ]
 }
